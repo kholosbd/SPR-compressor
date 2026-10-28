@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - SPR Compressor</title>
+  <style>
+    :root {
+      --brand: #FD7801;
+      --brand-soft: #FFF3E8;
+      --bg: #F8FAFC;
+      --card: #FFFFFF;
+      --text: #1E293B;
+      --muted: #64748B;
+      --border: #E2E8F0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding-bottom: 48px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #FD7801 0%, #EA580C 100%);
+      color: #FFFFFF;
+      padding: 48px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.92;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: -28px auto 0;
+      padding: 0 16px;
+    }
+
+    .highlight-banner {
+      background-color: var(--brand-soft);
+      border: 1px solid #FED7AA;
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    }
+
+    .highlight-banner strong {
+      color: #C2410C;
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .card {
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.03);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: var(--text);
+      margin-bottom: 12px;
+      padding-left: 12px;
+      border-left: 4px solid var(--brand);
+    }
+
+    p {
+      color: #334155;
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 10px 0 12px 22px;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 36px 16px 44px;
+      }
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>SPR Compressor &bull; Effective Date: October 27, 2026</p>
+  </header>
+
+  <main class="container">
+    <div class="highlight-banner">
+      <strong>100% On-Device Media Processing</strong>
+      <span>Your photos and videos never leave your phone. All image and video compression happens locally on your device without uploading media files to any external server.</span>
+    </div>
+
+    <section class="card">
+      <h2>1. Introduction</h2>
+      <p>
+        Welcome to <strong>SPR Compressor</strong> ("we," "our," or "us"). This Privacy Policy explains how our Android mobile application handles information, permissions, and device resources when you use SPR Compressor to compress, resize, and manage photos and videos.
+      </p>
+      <p>
+        By installing or using SPR Compressor, you agree to the practices described in this Privacy Policy.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. Information Collection and Use</h2>
+      <p>
+        SPR Compressor does <strong>not</strong> require you to create an account, register, or submit personal information such as your name, phone number, home address, or payment details to use the app.
+      </p>
+      <ul>
+        <li><strong>Media Files (Photos &amp; Videos):</strong> We do not collect, transmit, store, or share your photos, videos, EXIF metadata, or location tags on any remote server. Every compression operation runs directly on your device hardware.</li>
+        <li><strong>Local App Data:</strong> Your compression history, output records, custom save folder preferences, and compression presets are stored strictly locally on your device using Android local storage (Room Database and DataStore Preferences).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Device Permissions We Request</h2>
+      <p>To function properly, SPR Compressor requests only the minimum Android permissions needed for its core features:</p>
+      <ul>
+        <li><strong>Photos and Videos / Storage Access (<code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_VISUAL_USER_SELECTED</code>, and legacy storage permissions on older Android versions):</strong> Used solely to display your device media inside the picker, compress the files you select, and save the compressed output to your device or chosen folder.</li>
+        <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Optional permission used to notify you about compression status or important app updates. You can disable notifications anytime in your Android system settings.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Third-Party Services</h2>
+      <p>
+        While your media files remain 100% offline on your device, the app may use standard Google services for push messaging and reliability:
+      </p>
+      <ul>
+        <li>
+          <strong>Firebase Cloud Messaging (Google LLC):</strong> Used to deliver app notifications. Firebase may process anonymous device instance identifiers or push tokens solely to route notifications to your device. Learn more at the
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5. Data Retention and Deletion</h2>
+      <p>
+        Because SPR Compressor stores your compression history and preferences locally on your device, you have full control over your data at all times:
+      </p>
+      <ul>
+        <li>You can delete compressed files directly from your device gallery or file manager at any time.</li>
+        <li>Clearing the app's storage in Android Settings or uninstalling SPR Compressor permanently removes all locally saved history and preferences.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>6. Data Security</h2>
+      <p>
+        We prioritize your privacy by designing SPR Compressor to process media locally on your device. Since your photos and videos are never uploaded over the internet during compression, the risk of external interception or cloud exposure of your personal media is eliminated.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>7. Children's Privacy</h2>
+      <p>
+        SPR Compressor does not knowingly collect personally identifiable information from anyone, including children under the age of 13. If you believe that a child has provided personal information to us via support communication, please contact us so we can promptly delete it.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>
+        We may update our Privacy Policy from time to time to reflect app improvements or legal requirements. Any changes will be posted on this page with an updated "Effective Date" at the top.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>9. Contact Us</h2>
+      <p>
+        If you have any questions or suggestions regarding this Privacy Policy or SPR Compressor, please contact us at:
+      </p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:kholosbd@gmail.com">kholosbd@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 SPR Compressor. All rights reserved.
+    </footer>
+  </main>
+
+</body>
+</html>
